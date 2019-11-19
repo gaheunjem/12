@@ -6,11 +6,9 @@
 
 int main(int argc, char *argv[]) {
 	
-	char src[]="The worst things to eat before you sleep";
-	char dst[100];
+	char str[30]="happy C programming";
 	
-	strcpy(dst,src);
+	printf("%s : %i",str,strlen(str));
 	
-	printf("copied string : %s",dst);
-	
+	return 0;
 }
