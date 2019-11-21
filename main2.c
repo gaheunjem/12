@@ -9,14 +9,13 @@ int main(int argc, char *argv[]) {
 	char input[100];
 	FILE *fp;
 	
-	fp=fopen("sample.txt","r");
+	fp=fopen("sample.txt","w");
 	
 	for(i=0;i<3;i++)
 	{
-		//printf("input a word : ");
-		//scanf("%s",input);
-		fscanf(fp,"%s",input);
-		printf("%s\n",input);
+		printf("input a word : ");
+		scanf("%s",&input);
+		fprintf(fp,"%s\n",input);
 	}
 	
 
